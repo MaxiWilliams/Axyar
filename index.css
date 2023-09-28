@@ -1,80 +1,258 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    box-sizing: border-box;
+    margin: 0px 20%;
     color: white;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Roboto Mono', monospace;
-    font-family: 'Ubuntu', sans-serif;
-    background: rgb(41,230,174);
-    background: linear-gradient(90deg, rgba(41,230,174,1) 0%, rgba(0,151,199,1) 12%, rgba(0,151,199,1) 88%, rgba(41,230,174,1) 100%);
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1B98CA;
+}
+
+.presentacion {
+    display: inline-block;
+    text-align: center;
+    width: 59vh;
+    background-image: url(./img/img_BG_LOGO.png);
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height: 32vh;
+    margin: 0 8vh 0 1vh;
+}
+
+.p1{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    top: 40vh;
+    left: 175vh;
+}
+
+.p1 img{
+    object-fit: cover;
+    width: 4vh;
+    margin: 10px 0;
+    border-radius: 30px;
+}
+
+.p1 img:hover{
+    width: 4.5vh;
+    transition: .3s;
+}
+
+.p2{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    top: 47vh;
+    left: 175vh;
+}
+
+.p2 img{
+    object-fit: cover;
+    width: 4vh;
+    margin: 10px 0;
+    border-radius: 30px;
+}
+
+.p2 img:hover{
+    width: 4.5vh;
+    transition: .3s;
+}
+
+.p3{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    top: 54vh;
+    left: 175vh;
+}
+
+.p3 img{
+    object-fit: cover;
+    width: 4vh;
+    margin: 10px 0;
+    border-radius: 30px;
+}
+
+.p3 img:hover{
+    width: 4.5vh;
+    transition: .3s;
+}
+
+.p4{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    top: 61vh;
+    left: 175vh;
+}
+
+.p4 img{
+    object-fit: cover;
+    width: 4vh;
+    margin: 10px 0;
+    border-radius: 30px;
+}
+
+.p4 img:hover{
+    width: 4.5vh;
+    transition: .3s;
+}
+
+.img1 {
+    position: absolute;
+    top: 5vh;
+    right: 0;
+    width: 98vh;
+    height: 95vh;
+}
+
+.img1 img{
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+
+.img2 {
+    position: absolute;
+    top: 60vh;
+    left: 5vh;
+    width: 75vh;
+    height: 60vh;
+}
+
+.img2 img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+  }
+
+.img3 {
+    position: absolute;
+    top: 1700px;
+    left: 0;
+    width: 86vh;
+    height: 77vh;
+}
+
+.img3 img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+.img4 {
+    position: absolute;
+    top: 3000px;
+    right: 2vh;
+    width: 100vh;
+    height: 113vh;
+}
+
+.img4 img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+.img5 {
+    position: absolute;
+    top: 4650px;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+}
+
+.img5 img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+.img6 {
+    position: absolute;
+    top: 4700px;
+    right: 0;
+    width: 98vh;
+    height: 82vh;
+}
+
+.img6 img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
 }
 
 h1 {
-    text-align: center;
-    display: grid;
-    place-items: center;
-    width: 300px;
-    height: 100px;
-    margin: 8vh auto 0;
-    background-color: #006ab4;
-    border-radius: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 8vh;
+    margin: 18px 0px;
 }
 
 h3 {
-    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    margin: 0px auto;
 }
 
-.container {
+.burbujas {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 50%;
     margin: 5vh auto 20vh auto;
 }
 
-#burbuja {
+.container {
+    position: relative;
     display: flex;
-    font-size: larger;
-    color: rgba(0,151,199,1);
-    background-color: yellow;
-    border-radius: 150% 70%;
-    font-size: large;
-    line-height: 5vh;
-    letter-spacing: 3px;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    width: 50vh;
-    height: auto;
-    margin: 30px auto;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    margin: 5vh auto 4vh auto;
 }
 
+.container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: left;
+    width: 100%;
+    margin: 5vh auto 20vh auto;
+}
 
 .titulo {
-    font-size: 60px;
-    text-align: center;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 90px;
 }
 
 .info {
-    display: flex;
-     font-size: large;
-     letter-spacing: 2px;
-     width: auto;
-     margin: auto;
+    font-size: 3vh;
+    line-height: 5vh;
+    letter-spacing: 1px;
+    width: auto;
+    margin: auto 8vh;
 }
 
 .info2 {
-    display: flex;
     font-size: large;
+    position: relative;
     line-height: 5vh;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     display: grid;
-    place-items: top;
-    text-align: center;
+    grid-template-columns: auto;
     width: 50vh;
-    height: auto;
-    margin: 30px auto;
+    margin: 30px 30px;
+}
+
+.info2 b{
+    height: fit-content;
+    margin: 0;
 }
 
 .info3 {
@@ -83,12 +261,26 @@ h3 {
     letter-spacing: 3px;
     display: grid;
     place-items: left;
-    width: 70vh;
+    width: 100vh;
     height: auto;
+    padding: 0;
     margin: 30px auto;
 }
 
-.container2 {
+.info4 {
+    display: flex;
+    font-size: 22px;
+    letter-spacing: 3px;
+    display: grid;
+    place-items: left;
+    width: 100vh;
+    height: auto;
+    padding: 0;
+    margin: 30px auto;
+}
+
+.container3 {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -102,30 +294,30 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 50%;
-    margin: 15px auto;
+    padding-left: 0%;
+    width: 85%;
+    margin: 20px auto 20px 0px;
 } 
 
-.content{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
+.brochure {
+    display: grid;
+    align-items: center;
 }
 
-button {
-    color: #b36000;
-    font-size: 4vh;
-    border-color: none;
-    border-radius: 40px;
-    background-color: #ffbe73;
-    width: 30vh;
-    height: 30vh;
-    box-shadow: 4px 4px gray;
+.mapa {
+    height: 350px;
+    width: 460px;
+    margin: 0 0 0 200px;
 }
 
-button:hover {
-    transition: .3s;
-    width: 31vh;
-    height: 31vh;
+.mapa img{
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+
+.direccion {
+    position: relative;
+    width: 90%;
+    text-align: right;
 }
